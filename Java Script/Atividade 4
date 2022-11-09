@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function preferedBrowser() {
+  prefer = document.forms[0].browsers.value;
+  alert("You prefer browsing internet with " + prefer);
+}
+function myFunction(x) {
+  x.style.background = "green";
+}
+</script>
+</head>
+<body>
 
+<form>
+Quem é o melhor:
+  <select id="browsers" onchange="preferedBrowser()">
+    <option value="Ronaldo">Ronaldo Fenômeno</option>
+    <option value="Romário">Romário</option>
+    <option value="Neymar">Neymar</option>
+    <option value="Ronaldinho">Ronaldinho</option>
+    <option value="Zico">Zico</option>
+    <option value="Kaká">Kaká</option>
+  </select>
+</form>
+
+Coloque o nome de seu jogador favorito: <input type="text" onfocus="myFunction(this)">
+
+<h1 onmouseover="style.color='yellow'" onmouseout="style.color='black'">BRASIL HEXA CAMPEÃO!!!</h1>
+
+</body>
+</html>
